@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #39297b;
+    color: #fff; /* Corrected this */
+    padding: 20px; /* Added padding */
+}
+
+h1 {
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background-color: #434989;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 30px;
+}
+
+form button {
+    padding: 0px 40px;
+    height: 100%;
+    background-color: #ff3929;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; /* Added this for consistency */
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+
+#show-more-button {
+    background: #ff3929;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    display: none; /* Set to display: block or inline-block to show the button */
+}
+
+#search-result {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Responsive grid */
+    grid-gap: 40px;
+}
+
+#search-result img {
+    width: 100%; /* Adjusted width to fit the grid cell */
+    height: 300px;
+    object-fit: cover; /* Corrected this */
+    border-radius: 5px;
+}
